@@ -2,6 +2,13 @@ package de.omikron.services;
 
 import de.omikron.api.SearchResult;
 
+
+/**
+ * The response from a Search.ff service.
+ * 
+ * @author arno.pitters
+ *
+ */
 public class SearchResponse extends FFResponse{
 
 	private SearchResult searchResult;

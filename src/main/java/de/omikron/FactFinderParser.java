@@ -7,6 +7,12 @@ import de.omikron.services.SearchResponse;
 import de.omikron.services.SimilarRecordsResponse;
 import de.omikron.services.SuggestResponse;
 
+/**
+ * This is a generic Parser interface for the FACTFinder ObejctModel.
+ * 
+ * @author arno.pitters
+ *
+ */
 public interface FactFinderParser {
 
 	final Class<SearchResponse>				SERVICE_SEARCH				= SearchResponse.class;

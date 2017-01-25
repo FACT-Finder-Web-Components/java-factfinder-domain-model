@@ -1,14 +1,24 @@
 package de.omikron.api;
 
-// TODO map default with annotation
+import com.google.gson.annotations.SerializedName;
+
 public class ResultsPerPage {
 
-	// private boolean default;
+	@SerializedName("default")
+	private boolean	isDefault;
 	private String	searchParams;
 	private boolean	selected;
 	private int		value;
 
 	public ResultsPerPage() {
+	}
+
+	public boolean isDefault() {
+		return isDefault;
+	}
+
+	public void setDefault(boolean isDefault) {
+		this.isDefault = isDefault;
 	}
 
 	public String getSearchParams() {

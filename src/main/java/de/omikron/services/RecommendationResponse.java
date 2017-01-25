@@ -4,6 +4,12 @@ import java.util.List;
 
 import de.omikron.api.Record;
 
+/**
+ * The response from a Recommander.ff service.
+ * 
+ * @author arno.pitters
+ *
+ */
 public class RecommendationResponse extends FFResponse {
 
 	private List<Record> resultRecords;

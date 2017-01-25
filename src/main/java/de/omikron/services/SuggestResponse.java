@@ -4,6 +4,13 @@ import java.util.List;
 
 import de.omikron.api.Suggestion;
 
+
+/**
+ * The response from a Suggest.ff service.
+ * 
+ * @author arno.pitters
+ *
+ */
 public class SuggestResponse extends FFResponse {
 
 	private List<Suggestion> suggestions;

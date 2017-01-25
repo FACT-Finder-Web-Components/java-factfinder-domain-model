@@ -1,11 +1,13 @@
 package de.omikron.api;
 
+import java.util.List;
+
 public class AdvisorAnswer {
 
-	private String	id;
-	private String	params;
-	// private List<Question> questions;//TODO!
-	private String	text;
+	private String					id;
+	private String					params;
+	private List<AdvisorQuestion>	questions;
+	private String					text;
 
 	public AdvisorAnswer() {
 	}
@@ -26,6 +28,14 @@ public class AdvisorAnswer {
 		this.params = params;
 	}
 
+	public List<AdvisorQuestion> getQuestions() {
+		return questions;
+	}
+
+	public void setQuestions(List<AdvisorQuestion> questions) {
+		this.questions = questions;
+	}
+
 	public String getText() {
 		return text;
 	}
@@ -36,7 +46,7 @@ public class AdvisorAnswer {
 
 	@Override
 	public String toString() {
-		return "Answer [id=" + id + ", params=" + params + ", text=" + text + "]";
+		return "AdvisorAnswer [id=" + id + ", params=" + params + ", questions=" + questions + ", text=" + text + "]";
 	}
 
 }

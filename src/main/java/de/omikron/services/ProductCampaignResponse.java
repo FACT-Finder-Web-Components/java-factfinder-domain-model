@@ -5,6 +5,7 @@ import java.util.List;
 import de.omikron.api.Campaign;
 
 /**
+ * The response from a ProductCampaign.ff service.
  * 
  * @author arno.pitters
  *

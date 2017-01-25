@@ -5,6 +5,12 @@ import java.util.List;
 import de.omikron.api.Record;
 import de.omikron.api.SimilarRecordAttribute;
 
+/**
+ * The response from a SimilarRecords.ff service.
+ * 
+ * @author arno.pitters
+ *
+ */
 public class SimilarRecordsResponse extends FFResponse {
 
 	private List<SimilarRecordAttribute>	attributes;

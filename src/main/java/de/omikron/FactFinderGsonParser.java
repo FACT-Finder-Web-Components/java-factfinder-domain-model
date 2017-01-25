@@ -6,8 +6,7 @@ import com.google.gson.GsonBuilder;
 import de.omikron.services.FFResponse;
 
 /**
- * This is a JSON Parser for the JSON FACT-Finder response into Objects and
- * back.
+ * Implement the JSON response parsing with Gson.
  * 
  * @author arno.pitters
  *
