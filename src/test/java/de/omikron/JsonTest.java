@@ -6,8 +6,8 @@ import org.junit.Test;
 
 import com.google.gson.Gson;
 
-import de.omikron.api.SearchResult;
-import de.omikron.services.SearchResponse;
+import de.factfinder.api.SearchResult;
+import de.factfinder.services.SearchResponse;
 
 public class JsonTest {
 

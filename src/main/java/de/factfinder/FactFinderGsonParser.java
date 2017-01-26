@@ -1,9 +1,9 @@
-package de.omikron;
+package de.factfinder;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 
-import de.omikron.services.FFResponse;
+import de.factfinder.services.FFResponse;
 
 /**
  * Implement the JSON response parsing with Gson.

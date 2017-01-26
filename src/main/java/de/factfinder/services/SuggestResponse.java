@@ -1,8 +1,8 @@
-package de.omikron.services;
+package de.factfinder.services;
 
 import java.util.List;
 
-import de.omikron.api.Suggestion;
+import de.factfinder.api.Suggestion;
 
 
 /**

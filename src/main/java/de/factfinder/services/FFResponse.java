@@ -1,4 +1,4 @@
-package de.omikron.services;
+package de.factfinder.services;
 
 /**
  * Parent class for all FACTFinder responses.

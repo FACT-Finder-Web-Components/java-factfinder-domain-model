@@ -16,7 +16,9 @@ import com.codahale.metrics.MetricRegistry;
 import com.codahale.metrics.Timer;
 import com.codahale.metrics.Timer.Context;
 
-import de.omikron.services.SearchResponse;
+import de.factfinder.FactFinderGsonParser;
+import de.factfinder.FactFinderParser;
+import de.factfinder.services.SearchResponse;
 
 public class GsonParserTest {
 

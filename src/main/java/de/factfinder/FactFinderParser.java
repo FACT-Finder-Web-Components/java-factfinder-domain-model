@@ -1,11 +1,11 @@
-package de.omikron;
+package de.factfinder;
 
-import de.omikron.services.FFResponse;
-import de.omikron.services.ProductCampaignResponse;
-import de.omikron.services.RecommendationResponse;
-import de.omikron.services.SearchResponse;
-import de.omikron.services.SimilarRecordsResponse;
-import de.omikron.services.SuggestResponse;
+import de.factfinder.services.FFResponse;
+import de.factfinder.services.ProductCampaignResponse;
+import de.factfinder.services.RecommendationResponse;
+import de.factfinder.services.SearchResponse;
+import de.factfinder.services.SimilarRecordsResponse;
+import de.factfinder.services.SuggestResponse;
 
 /**
  * This is a generic Parser interface for the FACTFinder ObejctModel.

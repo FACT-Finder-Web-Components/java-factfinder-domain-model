@@ -1,8 +1,8 @@
-package de.omikron.api;
+package de.factfinder.api;
 
 import java.util.HashMap;
 
-import de.omikron.services.FFResponse;
+import de.factfinder.services.FFResponse;
 
 public class Suggestion extends FFResponse{
 

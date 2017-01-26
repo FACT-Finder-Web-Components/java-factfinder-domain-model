@@ -1,8 +1,8 @@
-package de.omikron.services;
+package de.factfinder.services;
 
 import java.util.List;
 
-import de.omikron.api.Record;
+import de.factfinder.api.Record;
 
 /**
  * The response from a Recommander.ff service.

@@ -1,6 +1,6 @@
-package de.omikron.services;
+package de.factfinder.services;
 
-import de.omikron.api.SearchResult;
+import de.factfinder.api.SearchResult;
 
 
 /**

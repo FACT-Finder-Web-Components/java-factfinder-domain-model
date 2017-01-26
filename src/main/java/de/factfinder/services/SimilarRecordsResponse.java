@@ -1,9 +1,9 @@
-package de.omikron.services;
+package de.factfinder.services;
 
 import java.util.List;
 
-import de.omikron.api.Record;
-import de.omikron.api.SimilarRecordAttribute;
+import de.factfinder.api.Record;
+import de.factfinder.api.SimilarRecordAttribute;
 
 /**
  * The response from a SimilarRecords.ff service.

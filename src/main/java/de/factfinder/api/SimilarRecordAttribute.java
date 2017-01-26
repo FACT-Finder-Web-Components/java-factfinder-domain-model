@@ -1,4 +1,4 @@
-package de.omikron.api;
+package de.factfinder.api;
 
 public class SimilarRecordAttribute {
 

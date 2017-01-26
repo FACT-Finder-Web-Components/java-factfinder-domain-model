@@ -1,4 +1,4 @@
-package de.omikron.api;
+package de.factfinder.api;
 
 import java.util.HashMap;
 import java.util.List;
