@@ -3,11 +3,14 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>de.omikron</groupId>
 	<artifactId>ff-json-parser</artifactId>
+	<!-- Version is related with the FACTFinder API it supports -->
 	<version>7.2-SNAPSHOT</version>
 	<name>ff-json-parser</name>
 
 	<properties>
 		<metrics.version>3.1.0</metrics.version>
+		<gson.version>2.8.0</gson.version>
+		<junit.version>4.12</junit.version>
 	</properties>
 
 	<dependencies>
@@ -15,14 +18,14 @@
 		<dependency>
 			<groupId>com.google.code.gson</groupId>
 			<artifactId>gson</artifactId>
-			<version>2.8.0</version>
+			<version>${gson.version}</version>
 		</dependency>
 
 		<!-- https://mvnrepository.com/artifact/junit/junit -->
 		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
-			<version>4.12</version>
+			<version>${junit.version}</version>
 			<scope>test</scope>
 		</dependency>
 
@@ -33,39 +36,41 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- another aproache to parse the JSON -->
 		<!-- needed for jsonschema2pojo-maven-plugin -->
-		<dependency>
-			<groupId>commons-lang</groupId>
-			<artifactId>commons-lang</artifactId>
-			<version>2.4</version>
-		</dependency>
-		<dependency>
-			<groupId>com.fasterxml.jackson.core</groupId>
-			<artifactId>jackson-databind</artifactId>
-			<version>2.0.0</version>
-		</dependency>
-		
+		<!-- <dependency> -->
+		<!-- <groupId>commons-lang</groupId> -->
+		<!-- <artifactId>commons-lang</artifactId> -->
+		<!-- <version>2.4</version> -->
+		<!-- </dependency> -->
+		<!-- <dependency> -->
+		<!-- <groupId>com.fasterxml.jackson.core</groupId> -->
+		<!-- <artifactId>jackson-databind</artifactId> -->
+		<!-- <version>2.0.0</version> -->
+		<!-- </dependency> -->
+
 	</dependencies>
 
 	<build>
 		<plugins>
 
-			<plugin>
-				<groupId>org.jsonschema2pojo</groupId>
-				<artifactId>jsonschema2pojo-maven-plugin</artifactId>
-				<version>0.4.29</version>
-				<configuration>
-					<sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory>
-					<targetPackage>de.omikron.schema</targetPackage>
-				</configuration>
-				<executions>
-					<execution>
-						<goals>
-							<goal>generate</goal>
-						</goals>
-					</execution>
-				</executions>
-			</plugin>
+			<!-- Uncomment to try out the jsonschema2pojo approach -->
+			<!-- <plugin> -->
+			<!-- <groupId>org.jsonschema2pojo</groupId> -->
+			<!-- <artifactId>jsonschema2pojo-maven-plugin</artifactId> -->
+			<!-- <version>0.4.29</version> -->
+			<!-- <configuration> -->
+			<!-- <sourceDirectory>${basedir}/src/main/resources/schema</sourceDirectory> -->
+			<!-- <targetPackage>de.omikron.schema</targetPackage> -->
+			<!-- </configuration> -->
+			<!-- <executions> -->
+			<!-- <execution> -->
+			<!-- <goals> -->
+			<!-- <goal>generate</goal> -->
+			<!-- </goals> -->
+			<!-- </execution> -->
+			<!-- </executions> -->
+			<!-- </plugin> -->
 
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>

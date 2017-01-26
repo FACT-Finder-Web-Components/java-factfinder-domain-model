@@ -55,3 +55,13 @@ If you want to cutomize the parsing setting you can just initialize the  FactFin
 	FactFinderParser parser = FactFinderGsonParser(gson);
 ```
 
+## JSON Schema (optional)
+In the **/src/main/resources** folder are all the JSON schema files the FACTFinder services. If you want you can generate some POJO's from them with the **jsonschema2pojo-maven-plugin** which is commented in the pom.xml
+Just uncomment it and the 2 dependencie's **commons-lang** and  **jackson-databind** and run maven with:
+
+```
+	mvn generate
+```
+
+You can define where the generated POJO's are located. 
+
