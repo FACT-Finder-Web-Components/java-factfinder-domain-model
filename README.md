@@ -23,14 +23,14 @@ For the following Service there are Response Classes defined:
 	
 You can quickly accsess them with the static constants in the FactFinderParser for example:
 
-'FactFinderParser.SERVICE_SEARCH'
+`FactFinderParser.SERVICE_SEARCH`
 
 ## Service detection
- In combination with the 'Helper SDK' for the FACTFinder Webcomponents you can quickly find the right service of each request:
+ In combination with the [Helper SDK](https://github.com/FACT-Finder/ff-wc-helper-sdk) for the FACTFinder Webcomponents you can quickly find the right service of each request:
  
  ```
-	private HelperSDK				sdk = new HelperSDK(settings);
-    private FactFinderParser 		parser = new FactFinderGsonParser();
+	private HelperSDK				sdk 	=	new HelperSDK(settings);
+    private FactFinderParser 		parser 	= 	new FactFinderGsonParser();
   
   	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
   	
