@@ -5,13 +5,13 @@ This project is a simple ObjectModel of the response's from FACTFinder. We parse
 # How to use
 Just create a FactFinderParser Object and give it the JSON String and which Service response to parse.  
 
-'''
+```
 	String json = "...";
 	FactFinderParser parser = new FactFinderGsonParser();
 	SearchResponse searchResult = (SearchResponse) parser.parse(json, FactFinderGsonParser.SERVICE_SEARCH);
 	//work with searchResult...
 	String jsonAgain =	parser.asJson(parse);
-'''
+```
 
 For the following Service there are Response Classes defined:
 
@@ -28,7 +28,7 @@ You can quickly accsess them with the static constants in the FactFinderParser f
 ## Service detection
  In combination with the 'Helper SDK' for the FACTFinder Webcomponents you can quickly find the right service of each request:
  
- '''
+ ```
 	private HelperSDK				sdk = new HelperSDK(settings);
     private FactFinderParser 		parser = new FactFinderGsonParser();
   
@@ -42,16 +42,16 @@ You can quickly accsess them with the static constants in the FactFinderParser f
   	//work with searchResult...
   	}
   	
-'''
+```
 
 ## Customize parsing
 If you want to cutomize the parsing setting you can just initialize the  FactFinderGsonParser with a 'Gson' Object:
 
-'''
+```
 	GsonBuilder builder = new GsonBuilder()
 	builder.serializeNulls();
 	//builder.setSomeOtherSettings
 	Gson gson = builder.create()
 	FactFinderParser parser = FactFinderGsonParser(gson);
-'''
+```
 
