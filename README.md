@@ -26,17 +26,17 @@ You can quickly accsess them with the static constants in the FactFinderParser f
 `FactFinderParser.SERVICE_SEARCH`
 
 ## Service detection
- In combination with the [Helper SDK](https://github.com/FACT-Finder/ff-wc-helper-sdk) for the FACTFinder Webcomponents you can quickly find the right service of each request:
+ In combination with the [ff-webcomponents-utils](https://github.com/FACT-Finder/ff-webcomponents-utils) project, you can quickly find the right service of each request:
  
  ```java
-	private HelperSDK				sdk 	=	new HelperSDK(settings);
+	private WebcomponentsUtils		utils 	=	new WebcomponentsUtils(settings);
     private FactFinderParser 		parser 	= 	new FactFinderGsonParser();
   
   	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
   	
-  	sdk.copyHeaders(req, resp);
-  	FFService service = sdk.extractService(req);
-  	String json = sdk.sendRequest(req).getData();
+  	utils.copyHeaders(req, resp);
+  	FFService service = utils.extractService(req);
+  	String json = utils.sendRequest(req).getData();
   	Class<?> serviceClass = parser.getServiceResponseClass(service.name());
   	SearchResponse searchResult = (SearchResponse) parser.parse(json,serviceClass);
   	//work with searchResult...
