@@ -1,19 +1,20 @@
-## FACTFinder Json parser
+## Java FactFinder Domain Model
 
-This project is a simple ObjectModel of the response's from FACTFinder. We parse the response with [Gson](https://github.com/google/gson)
+This project is a simple Java Domain Object Model of the response's from a FACTFinder Service. We parse the response with [Gson](https://github.com/google/gson) for easy use in your projects.
 
 # How to use
 Just create a FactFinderParser Object and give it the JSON String and which Service response to parse.  
 
 ```java
-	String json = "...";
+	String json = "...";//form the FactFinder response
 	FactFinderParser parser = new FactFinderGsonParser();
 	SearchResponse searchResult = (SearchResponse) parser.parse(json, FactFinderGsonParser.SERVICE_SEARCH);
 	//work with searchResult...
 	String jsonAgain =	parser.asJson(parse);
 ```
 
-For the following Service there are Response Classes defined:
+For the following service there are Response classes defined:
+
 ```java
  	SearchResponse.class;
 	SuggestResponse.class;
@@ -21,6 +22,7 @@ For the following Service there are Response Classes defined:
 	SimilarRecordsResponse.class;
 	ProductCampaignResponse.class;
 ```
+
 You can quickly accsess them with the static constants in the FactFinderParser for example:
 
 `FactFinderParser.SERVICE_SEARCH`

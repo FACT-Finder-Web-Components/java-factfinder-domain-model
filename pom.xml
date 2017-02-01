@@ -1,11 +1,14 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
-	<groupId>de.omikron</groupId>
-	<artifactId>ff-json-parser</artifactId>
+	<groupId>de.factfinder.webcomponents</groupId>
+	<artifactId>java-factfinder-domain-model</artifactId>
 	<!-- Version is related with the FACTFinder API it supports -->
 	<version>7.2-SNAPSHOT</version>
-	<name>ff-json-parser</name>
+	<name>Java FACTFinder Domain Model</name>
+	<description>
+		This project gives a basic FACTFinder Domain model for the Service response. Also includes a JSON parser for ease of use.
+	</description>
 
 	<properties>
 		<metrics.version>3.1.0</metrics.version>
