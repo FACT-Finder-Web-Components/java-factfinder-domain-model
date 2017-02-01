@@ -1,4 +1,4 @@
-package de.omikron;
+package de.factfinder;
 
 import static org.junit.Assert.*;
 
